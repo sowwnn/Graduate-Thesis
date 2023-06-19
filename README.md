@@ -29,7 +29,7 @@ Prepair you datalist
 
 ### For training
 #### With my first method names 3D Dual-Domain Attention, you need to configure information like **exemple/exp.json**
-```json
+```js
 {
     "model_name": "dynunet", //[segresnet, dynunet, vnet, swinunetr, dynunet_dda]
     "att": [], //Only use if model_name is dynunet_dda else [] 
@@ -65,7 +65,7 @@ python 3d_dda.py --input <your exp.json file>
 ```
 #### 3D Dual-Fusion Attention
 **You need to add 2 more variable in exp.json is:**
-```json
+```js
 ...
     "model_name": "fusion", 
     ...
