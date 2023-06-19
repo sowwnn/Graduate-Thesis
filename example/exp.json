@@ -1,0 +1,16 @@
+{
+    "model_name": "dynunet",
+    "att": [], 
+    "project": "st_baseline",
+    "model_trained": "temp/trained/dynunet/best_metric_model.pth", 
+    "datalist": "temp/datalist.json",
+    "config":{
+        "loss": "mse",
+        "max_epochs": 120,
+        "name":"dda_+",
+        "lr":3e-4,
+        "tmax": 30,
+        "results_dir":"temp/results",
+        "log": false
+    }
+}    
