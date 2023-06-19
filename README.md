@@ -29,21 +29,21 @@ Prepair you datalist
 
 ### For training
 #### With my first method names 3D Dual-Domain Attention, you need to configure information like **exemple/exp.json**
-```js
+```json
 {
-    "model_name": "dynunet", //[segresnet, dynunet, vnet, swinunetr, dynunet_dda]
-    "att": [], //Only use if model_name is dynunet_dda else [] 
-    "project": "st_baseline",
-    "model_trained": null, //null for training stage, trained path for testing stage 
-    "datalist": "temp/datalist.json", //your datalist
+    "model_name": "//one in [segresnet, dynunet, vnet, swinunetr, dynunet_dda]",
+    "att": "//Only use if model_name is dynunet_dda else []" 
+    "project": "baseline",
+    "model_trained": "//null for training stage, trained path for testing stage",
+    "datalist": "//your datalist.json path",
     "config":{
         "loss": "mse",
         "max_epochs": 120,
         "name":"dda_+",
         "lr":3e-4,
         "tmax": 30,
-        "results_dir":"temp/results", //results dir
-        "log": false //true if you want show on your wandb
+        "results_dir":"//dir of outputs",
+        "log": "//true if you want show on your wandb",
     }
 }   
 ```
