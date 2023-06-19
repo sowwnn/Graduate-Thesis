@@ -10,21 +10,21 @@ ____
 ### You need to clone my repo and setup it.
 
 ```bash
-git clone https://github.com/RC-Sho0/Graduate-Thesis.git
+~ git clone https://github.com/RC-Sho0/Graduate-Thesis.git
 ```
 Move to source code folder.
 
 ```bash
-cd Graduate-Thesis
+~ cd Graduate-Thesis
 ```
 Set it up
 ```bash
-python utils/setup.py <!your wandb key or empty>
+~ python utils/setup.py <!your wandb key or empty>
 ```
 
 Prepair you datalist
 ```bash
-!python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "train" --split 'true'
+~ python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "train" --split 'true'
 ```
 
 ### For training
@@ -49,7 +49,7 @@ Prepair you datalist
 ```
 **Training:**
 ```bash
-python seg_train.py --input <your exp.json file>
+~ python seg_train.py --input <your exp.json file>
 ```
 
 
@@ -59,9 +59,9 @@ python seg_train.py --input <your exp.json file>
 #### 3D Dual-Domain Attention
 Fill model_trained in exp.json then run
 ```bash
-python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "test" 
+~ python libs/data/prepare_datalist.py --path "<Your folder contain dataset>" --output "/{path of file}/datalist.json" --stage "test" 
 
-python 3d_dda.py --input <your exp.json file>
+~ python 3d_dda.py --input <your exp.json file>
 ```
 #### 3D Dual-Fusion Attention
 **You need to add 2 more variable in exp.json is:**
@@ -76,7 +76,7 @@ python 3d_dda.py --input <your exp.json file>
 ```
 **than run**
 ```zsh
-python 3d_dda.py --input <your exp.json file>
+~ python 3d_dda.py --input <your exp.json file>
 ```
 
 ***That all :3***
